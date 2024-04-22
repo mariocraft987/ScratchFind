@@ -1,6 +1,6 @@
 //Toggle light or dark mode
 function toggleTheme() {
-    let theme = getElementByTagName("html");
+    let theme = document.getElementsByTagName("html")[0];
     if (theme.className == "light") {
         theme.className = "dark";
     } else if (theme.className == "dark") {
