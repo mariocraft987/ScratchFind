@@ -4,6 +4,11 @@ html.light {
     color: black;
 }
 
+html.dark {
+    background-color: black;
+    color: white;
+}
+
 h1 {
     text-align: center;
 }
