@@ -1,1 +1,13 @@
+/* Light mode */
+html.light {
+    background-color: white;
+    color: black;
+}
 
+h1 {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
