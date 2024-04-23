@@ -27,15 +27,18 @@ h1 {
 }
 
 #inputDrop {
-    white-space: nowrap;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
-/* Slider */
-input {
+#submit {
     display: block;
     margin: auto;
 }
 
+/* Slider */
 .switch {
     position: fixed;
     display: inline-block;
