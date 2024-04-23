@@ -1,12 +1,11 @@
 import requests
 from pyscript import document
 
-
 url = document.querySelector("#url")
 display = document.querySelector("#display")
 display.innerText = "a"
-link = url.value
+link = ""
 
-def hello():
-    response = requests.get(link)
-    display.innerText = response.text
+def hello(event):
+  link = url.value
+  display.textContent = link

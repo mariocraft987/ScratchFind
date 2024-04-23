@@ -11,12 +11,12 @@ html.dark {
 }
 
 /* Centering */
-h1, #url {
+h1 {
     text-align: center;
 }
 
 /* Slider */
-button {
+input {
     display: block;
     margin: auto;
 }
