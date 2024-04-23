@@ -15,6 +15,17 @@ h1 {
     text-align: center;
 }
 
+/* Input area styling */
+#url {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#drop {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
 /* Slider */
 input {
     display: block;

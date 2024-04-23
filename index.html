@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
 <head>
+    <!-- Back end -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScratchFind</title>
@@ -8,13 +9,19 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.4.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2024.4.1/core.js"></script>
     <script type="py" src="./main.py" config="./pyscript.json"></script>
+
+    <!-- Front end -->
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- Back end -->
-    <script src="script.js"></script>
-    
-    <!-- Front end -->
     <h1>ScratchFind</h1>
+    <select name="type" id="drop" required>
+        <option value="" disabled selected hidden>What are you looking for?</option>
+        <option value="user">User</option>
+        <option value="project">Project</option>
+        <option value="studio">Studio</option>
+        <option value="url">Enter a URL</option>
+    </select>
     <input id="url" type="text" name="input" placeholder="Paste your URL here">
     <input py-click="getResult" type="submit" value="Find!">
     <h1 id="display"></h1>
