@@ -5,7 +5,9 @@ url = document.querySelector("#url")
 display = document.querySelector("#display")
 display.innerText = "a"
 link = ""
+response = ""
 
-def hello(event):
+def getResult(event):
   link = url.value
-  display.textContent = link
+  response = requests.get(link)
+  display.innerText = response.text
