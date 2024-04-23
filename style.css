@@ -26,6 +26,10 @@ h1 {
     border-bottom-left-radius: 8px;
 }
 
+#inputDrop {
+    white-space: nowrap;
+}
+
 /* Slider */
 input {
     display: block;
