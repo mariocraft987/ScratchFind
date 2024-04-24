@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
 <head>
-    <!-- Back end -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScratchFind</title>
-    <link rel="stylesheet" href="style.css">
-
     <!-- Front end -->
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>ScratchFind</h1>
     <input id="url" type="text" name="input" placeholder="Paste your URL here">
-    <input py-click="getResult" type="submit" value="Find!">
-    <h1 id="display"></h1>
+    <button onclick="getResult()">Find!</button>
+    <h1 id="display"></h1
     
     <!-- Theme toggle -->
     <label class="switch">
         <input type="checkbox" onclick="toggleTheme()">
         <span class="slider"></span>
     </label>
-
+    <!-- Please don't move this to the top | Back end -->
+    <script src="script.js"></script>
 </body>
 </html>

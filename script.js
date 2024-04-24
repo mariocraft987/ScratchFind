@@ -1,3 +1,6 @@
+const display = document.getElementById('display')
+const url = document.getElementById('url')
+
 //Toggle light or dark mode
 function toggleTheme() {
     let theme = document.getElementsByTagName("html")[0];
@@ -11,3 +14,9 @@ function toggleTheme() {
 fetch("https://api.scratch.mit.edu/users/BwnnyRxbbit/")
   .then((response) => response.json())
   .then((json) => console.log(json));
+
+function getResult() {
+    if (url.value == "") {
+        display.innerHTML = "This field can't be blank!"
+    }
+}
