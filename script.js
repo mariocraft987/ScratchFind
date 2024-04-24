@@ -7,3 +7,7 @@ function toggleTheme() {
         theme.className = "light";
     }
 }
+
+fetch("https://api.scratch.mit.edu/users/BwnnyRxbbit/")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
