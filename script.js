@@ -1,5 +1,7 @@
-const display = document.getElementById('display')
-const url = document.getElementById('url')
+const output = document.getElementById("output")
+const url = "a"
+console.log(url)
+
 
 // Toggle light or dark mode
 function toggleTheme() {
@@ -12,20 +14,31 @@ function toggleTheme() {
 }
 
 // Get data
-return fetch('https://api.scratch.mit.edu/users/BwnnyRxbbit/', {    
-    method: 'GET',    
-    withCredentials: true,    
-    crossorigin: true,    
-    mode: 'no-cors',       
-  })    
-    .then((res) => res.json())    
-    .then((data) => {   
-        return data; 
-    })    
+fetch('https://api.scratch.mit.edu/users/BwnnyRxbbit/', {
+  mode: 'no-cors'
+})
+  .then(response => {
+    const json = response.json();
+    console.log(json);
+    if (response.ok) {
+      console.log('Request successful');
+    } else {
+      console.error('Request failed');
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });  
 
 
 function getResult() {
     if (url.value == "") {
-        display.innerHTML = "This field can't be blank!"
+        output.innerHTML = "This field can't be blank!"
     }
 }
+
+if (url.value == "") {
+    output.innerHTML = "THIS IS TEST"
+}
+
+console.log(document.getElementById('output'))
