@@ -12,9 +12,17 @@ function toggleTheme() {
 }
 
 // Get data
-fetch("https://api.scratch.mit.edu/users/BwnnyRxbbit/")
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+return fetch('https://api.scratch.mit.edu/users/BwnnyRxbbit/', {    
+    method: 'GET',    
+    withCredentials: true,    
+    crossorigin: true,    
+    mode: 'no-cors',       
+  })    
+    .then((res) => res.json())    
+    .then((data) => {   
+        return data; 
+    })    
+
 
 function getResult() {
     if (url.value == "") {
