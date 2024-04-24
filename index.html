@@ -6,9 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ScratchFind</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://pyscript.net/releases/2024.4.1/core.css">
-        <script type="module" src="https://pyscript.net/releases/2024.4.1/core.js"></script>
-        <script type="py" src="./main.py" config="./pyscript.json"></script>
         <!-- Front end -->
         <script src="script.js"></script>
     </head>
@@ -22,7 +19,6 @@
                 <option value="studio">Studio</option>
                 <option value="url">Enter a URL</option>
             </select>
-            <input id="url" type="text" name="input" placeholder="Type what you want to find here">
             <input id="url" type="text" name="input" placeholder="Type what you want to find here" required>
         </div>
         <input py-click="getResult" id="submit" type="submit" value="Find!">
