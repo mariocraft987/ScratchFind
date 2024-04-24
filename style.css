@@ -15,12 +15,30 @@ h1 {
     text-align: center;
 }
 
-/* Slider */
-input {
+/* Input area styling */
+#url {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#drop {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#inputDrop {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#submit {
     display: block;
     margin: auto;
 }
 
+/* Slider */
 .switch {
     position: fixed;
     display: inline-block;

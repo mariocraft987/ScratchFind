@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
 <head>
+    <!-- Back end -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ScratchFind</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Front end -->
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- Back end -->
-    <script src="script.js"></script>
-    
-    <!-- Front end -->
     <h1>ScratchFind</h1>
     <input id="url" type="text" name="input" placeholder="Paste your URL here">
-    <input type="submit" value="Find!">
+    <input py-click="getResult" type="submit" value="Find!">
     <h1 id="display"></h1>
     
     <!-- Theme toggle -->
