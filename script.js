@@ -17,6 +17,6 @@ fetch("https://trampoline.turbowarp.org/api/users/BwnnyRxbbit")
 
 function getResult() {
   if (document.getElementById('url').value = "") {
-    document.getElementById('output').innerHTML = "a"
+    document.getElementById('output').innerHTML = "The above field cannot be blank."
   }
 }
