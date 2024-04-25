@@ -20,8 +20,8 @@ html.dark {
 
 /*Changing the font and size of the heading*/
 #scratchFindHeading{
-    font-size: 100px
-    font-family: "Lucida Console", "Courier New", "monospace";
+    font-size: 100px;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /* Centering */
