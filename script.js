@@ -1,6 +1,3 @@
-const url = document.getElementById('url');
-const output = document.getElementById('output');
-
 // Toggle light or dark mode
 function toggleTheme() {
     let theme = document.getElementsByTagName("html")[0];
@@ -19,5 +16,7 @@ fetch("https://trampoline.turbowarp.org/api/users/BwnnyRxbbit")
 })
 
 function getResult() {
-  output.innerHTML = "a";
+  if (document.getElementById('url').value = "") {
+    document.getElementById('output').innerHTML = "a"
+  }
 }
