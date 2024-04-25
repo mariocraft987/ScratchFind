@@ -10,6 +10,20 @@ html.dark {
     color: white;
 }
 
+/*Centering the Logo(POV: Desktop)*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Changing the font and size of the heading*/
+#scratchFindHeading{
+    font-size: 100px
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
 /* Centering */
 h1 {
     text-align: center;
@@ -19,11 +33,15 @@ h1 {
 #url {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    padding: 20px 16px;
+    font-size: 1rem;
 }
 
 #drop {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+    padding: 15px 10px;
+    font-size: 1rem;
 }
 
 #inputDrop {
@@ -92,4 +110,11 @@ input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 17%;
 }
