@@ -1,3 +1,6 @@
+const link = document.getElementById('link')
+const output = document.getElementById('output')
+
 // Toggle light or dark mode
 function toggleTheme() {
     let theme = document.getElementsByTagName("html")[0];
@@ -16,7 +19,13 @@ fetch("https://trampoline.turbowarp.org/api/users/BwnnyRxbbit")
 })
 
 function getResult() {
-  if (document.getElementById('url').value = "") {
-    document.getElementById('output').innerHTML = "The above field cannot be blank."
+  if (link.value == "") {
+    output.innerHTML = "This field can't be blank!"
+  } else {
+    fetch("https://trampoline.turbowarp.org/api/users/BwnnyRxbbit")
+    .then((response) => response.json())
+    .then((response) => {
+      output.innerHTML = response;
+    })
   }
 }
