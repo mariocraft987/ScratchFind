@@ -32,8 +32,8 @@ function change(event) {
 }
 
 function getResult() {
-  if (currentValue == "url") {
-    fetch(link.value)
+  if (currentValue == "user") {
+    fetch("https://trampoline.turbowarp.org/api/users/" + link.value)
     .then((response) => response.json())
     .then((response) => {
       output1.innerHTML = "ID: " + response.id
