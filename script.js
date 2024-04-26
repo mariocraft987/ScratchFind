@@ -1,5 +1,8 @@
 const link = document.getElementById('link')
-const output = document.getElementById('output')
+const output1 = document.getElementById('output1')
+const output2 = document.getElementById('output2')
+const output3 = document.getElementById('output3')
+const output4 = document.getElementById('output4')
 
 // Toggle light or dark mode
 function toggleTheme() {
@@ -18,14 +21,22 @@ fetch("https://trampoline.turbowarp.org/api/users/BwnnyRxbbit")
     console.log(response);
 })
 
+
+const drop = document.getElementById("drop");
+let currentValue;
+drop.addEventListener("change", change);
+
+function change(event) {
+  currentValue = event.target.value;
+  console.log(currentValue);
+}
+
 function getResult() {
-  if (link.value == "") {
-    output.innerHTML = "This field can't be blank!"
-  } else {
-    fetch("https://trampoline.turbowarp.org/api/users/BwnnyRxbbit")
+  if (currentValue == "url") {
+    fetch(link.value)
     .then((response) => response.json())
     .then((response) => {
-      output.innerHTML = response;
+      output1.innerHTML = "ID: " + response.id
     })
   }
 }
