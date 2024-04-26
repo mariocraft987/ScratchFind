@@ -4,13 +4,13 @@ html.light {
     color: black;
 }
 
-/*Dark mode */
+/* Dark mode */
 html.dark {
     background-color: black;
     color: white;
 }
 
-/*Centering the Logo(POV: Desktop)*/
+/* Centering the Logo and PFP(POV: Desktop) */
 .center {
   display: block;
   margin-left: auto;
@@ -18,8 +18,8 @@ html.dark {
   width: 17%;
 }
 
-/*Changing the font and size of the heading*/
-#scratchFindHeading{
+/* Changing the font and size of the heading */
+#scratchFindHeading {
     font-size: 100px;
     font-family: "Lucida Console", "Courier New", monospace;
 }
