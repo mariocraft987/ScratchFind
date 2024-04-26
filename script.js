@@ -1,11 +1,12 @@
-const link = document.getElementById('link')
-const output1 = document.getElementById('output1')
-const output2 = document.getElementById('output2')
-const output3 = document.getElementById('output3')
-const output4 = document.getElementById('output4')
-const output5 = document.getElementById('output5')
-const output6 = document.getElementById('output6')
-const output7 = document.getElementById('output7')
+const link = document.getElementById('link');
+const image = document.getElementById('image');
+const output1 = document.getElementById('output1');
+const output2 = document.getElementById('output2');
+const output3 = document.getElementById('output3');
+const output4 = document.getElementById('output4');
+const output5 = document.getElementById('output5');
+const output6 = document.getElementById('output6');
+const output7 = document.getElementById('output7');
 
 // Toggle light or dark mode
 function toggleTheme() {
@@ -30,6 +31,7 @@ function getResult() {
     fetch("https://trampoline.turbowarp.org/api/users/" + link.value)
     .then((response) => response.json())
     .then((response) => {
+      image.src = "https://cdn2.scratch.mit.edu/get_image/user/" + response.id + "_90x90.png?v=";
       output1.innerHTML = "Username: " + response.username;
       output2.innerHTML = "ID: " + response.id;
       output3.innerHTML = "Scratch Team?: " + response.scratchteam;
