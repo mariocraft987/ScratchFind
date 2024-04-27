@@ -32,7 +32,8 @@ function getResult() {
     .then((response) => response.json())
     .then((response) => {
       image.src = "https://cdn2.scratch.mit.edu/get_image/user/" + response.id + "_90x90.png?v=";
-      output1.innerHTML = "Username: " + response.username;
+      let a = "Username: ";
+      output1.innerHTML = a.bold() + response.username;
       output2.innerHTML = "ID: " + response.id;
       output3.innerHTML = "Scratch Team?: " + response.scratchteam;
       output4.innerHTML = "Joined: " + response.history.joined;
