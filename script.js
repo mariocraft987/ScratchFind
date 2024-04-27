@@ -53,6 +53,7 @@ function getResult() {
     fetch("https://trampoline.turbowarp.org/api/projects/" + link.value)
     .then((response) => response.json())
     .then((response) => {
+      image.style.display = "none";
       let title = "Title: ";
       output1.innerHTML = title.bold() + response.title;
       output2.innerHTML = id.bold() + response.id;
@@ -63,6 +64,7 @@ function getResult() {
       let author = "Author: @";
       output5.innerHTML = author.bold() + response.author.username;
       output6.innerHTML = "";
+      output7.innerHTML = "";
     })
   }
 }
