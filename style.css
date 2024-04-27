@@ -29,6 +29,10 @@ h1, p {
     text-align: center;
 }
 
+p {
+    font-size: 2rem;
+}
+
 /* Input area styling */
 #url {
     border-top-right-radius: 8px;

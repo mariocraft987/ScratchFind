@@ -8,6 +8,8 @@ const output5 = document.getElementById('output5');
 const output6 = document.getElementById('output6');
 const output7 = document.getElementById('output7');
 
+let id = "ID: ";
+
 // Toggle light or dark mode
 function toggleTheme() {
     let theme = document.getElementsByTagName("html")[0];
@@ -32,25 +34,34 @@ function getResult() {
     .then((response) => response.json())
     .then((response) => {
       image.src = "https://cdn2.scratch.mit.edu/get_image/user/" + response.id + "_90x90.png?v=";
-      let a = "Username: ";
-      output1.innerHTML = a.bold() + response.username;
-      output2.innerHTML = "ID: " + response.id;
-      output3.innerHTML = "Scratch Team?: " + response.scratchteam;
-      output4.innerHTML = "Joined: " + response.history.joined;
-      output5.innerHTML = "Country: " + response.profile.country;
-      output6.innerHTML = "About me: " + response.profile.bio;
-      output7.innerHTML = "What I'm working on: " + response.profile.status;
+      let username = "Username: ";
+      output1.innerHTML = username.bold() + response.username;
+      output2.innerHTML = id.bold() + response.id;
+      let scratchteam = "Scratch Team?: ";
+      output3.innerHTML = scratchteam.bold() + response.scratchteam;
+      let joined = "Joined: ";
+      output4.innerHTML = joined.bold() + response.history.joined;
+      let country = "Country: ";
+      output5.innerHTML = country.bold() + response.profile.country;
+      let bio = "About me: ";
+      output6.innerHTML = bio.bold() + response.profile.bio;
+      let status = "What I'm working on: ";
+      output7.innerHTML = status.bold() + response.profile.status;
     })
   }
   if (currentValue == "project") {
     fetch("https://trampoline.turbowarp.org/api/projects/" + link.value)
     .then((response) => response.json())
     .then((response) => {
-      output1.innerHTML = "Title: " + response.title;
-      output2.innerHTML = "ID: " + response.id;
-      output3.innerHTML = "Intruction: " + response.instructions;
-      output4.innerHTML = "Notes and Credits: " + response.description;
-      output5.innerHTML = "Author: @" + response.author.username;
+      let title = "Title: ";
+      output1.innerHTML = title.bold() + response.title;
+      output2.innerHTML = id.bold() + response.id;
+      let instructions = "Intruction: ";
+      output3.innerHTML = instructions.bold() + response.instructions;
+      let description = "Notes and Credits: ";
+      output4.innerHTML = description.bold() + response.description;
+      let author = "Author: @";
+      output5.innerHTML = author.bold() + response.author.username;
       output6.innerHTML = "";
     })
   }
