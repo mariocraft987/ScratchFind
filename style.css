@@ -2,12 +2,14 @@
 html.light {
     background-color: white;
     color: black;
+    background-image: url("binary-code-white-background-with-floating-numbers_1017-25331.jpg");
 }
 
 /* Dark mode */
 html.dark {
     background-color: black;
     color: white;
+    background-image: url("istockphoto-865457032-612x612.jpg");
 }
 
 /* Centering the Logo and PFP(POV: Desktop) */
@@ -21,6 +23,15 @@ html.dark {
 /* Changing the font and size of the heading */
 #scratchFindHeading {
     font-size: 100px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* Changing the font of the find button */
+#submit {
+    background: ;
+    height: auto;
+    width: auto;
+    font-size: 40px;
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
