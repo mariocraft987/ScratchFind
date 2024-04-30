@@ -27,12 +27,22 @@ html.dark {
 }
 
 /* Changing the font of the find button */
-#submit {
-    background: ;
+html.light #submit {
+    background-color: #2196F3;
     height: auto;
     width: auto;
     font-size: 30px;
     font-family: "Lucida Console", "Courier New", monospace;
+    border-radius: 20px;
+}
+
+html.dark #submit {
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border-radius: 20px;
 }
 
 /* Centering */
@@ -125,4 +135,9 @@ input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+}
+
+#link {
+    padding: 20px 40px;
+    font-size: 1.2rem;
 }
