@@ -3,6 +3,7 @@ html.light {
     background-color: white;
     color: black;
     background-image: url("binary-code-white-background-with-floating-numbers_1017-25331.jpg");
+    font-family: arial;
 }
 
 /* Dark mode */
@@ -10,6 +11,7 @@ html.dark {
     background-color: black;
     color: white;
     background-image: url("istockphoto-865457032-612x612.jpg");
+    font-family: arial;
 }
 
 /* Centering the Logo and PFP(POV: Desktop) */
